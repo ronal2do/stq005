@@ -1,0 +1,43 @@
+<ion-view view-title="Colabore" >
+    <ion-content padding="true" class="has-header" id="colabore">
+    <section ng-controller="GeoCtrl" data-ng-init="getPosition()">
+       
+      <div id="refresh_button">
+        
+      
+        <button class="button icon-left button-block button-outline ion-camera button-energized" ng-click="getPhoto()">
+            Foto
+        </button>
+         
+         <label class="item item-input item-floating-label ">
+          <span class="input-label ">Endereço</span>
+          <input type="text" placeholder="Endereço">
+        </label>
+         <label class="item item-input item-floating-label ">
+          <span class="input-label ">Informações</span>
+          <input type="text" placeholder="Informações">
+        </label>
+        
+        <button class="button icon-left button-block button-outline ion-location button-energized" ng-click="getPosition()">
+            Usar localização atual
+        </button>
+        
+      </div>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit incidunt, possimus dolores quis exercitationem iusto fuga, consequuntur eius. Excepturi consequuntur voluptates dolor exercitationem amet inventore ipsa officiis, nisi accusamus deleniti.
+       </p>
+      
+      <!--
+        <form>
+            <ion-list>
+            <ion-item ng-repeat="marker in marker" href="#/tab/checkin/{{marker.id}}?facebookId={{marker.facebook_id}}" class="item item-icon-right">
+              <i class="icon ion-chevron-right"></i>
+              <span><h2>{{marker.name}}</h2></span>
+            </ion-item>
+            </ion-list>
+        </form>
+      -->
+      
+      </section>
+    </ion-content>
+</ion-view>
